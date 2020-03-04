@@ -1,6 +1,9 @@
 <?php
   include 'database.php';
-  $sql = "SELECT * FROM stanze WHERE id = 1";
+
+  $idRoom = $_GET['id'];
+
+  $sql = "SELECT * FROM stanze WHERE id = $idRoom";
 
   $result = $conn->query($sql);
 

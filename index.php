@@ -1,6 +1,5 @@
 <?php
   include 'database.php';
-  var_dump($rooms);
  ?>
 
  <!DOCTYPE html>
@@ -14,8 +13,7 @@
      <table class="table">
        <thead>
          <tr>
-           <th>ID</th>
-           <th>PIANO</th>
+           <th>STANZA NUMERO</th>
            <th></th>
          </tr>
        </thead>
@@ -23,9 +21,8 @@
          <?php if (!empty($rooms)) {
             foreach ($rooms as $room) {           ?>
              <tr>
-               <td><?php echo $room['id'] ?> </td>
-               <td><?php echo $room['floor']  ?></td>
-               <td><a href="#">Guarda Dettagli Stanza</a> </td>
+               <td><?php echo $room['room_number']?> </td>
+               <td><a href="show/show.php?id=<?php echo $room['id'] ?>">Guarda Dettagli Stanza</a> </td>
              </tr>
            <?php }
          } ?>
