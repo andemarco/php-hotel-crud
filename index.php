@@ -10,6 +10,7 @@
      <title></title>
    </head>
    <body>
+     <h1 class="text-center">HOTEL MICAMALE</h1>
      <table class="table">
        <thead>
          <tr>
@@ -22,7 +23,7 @@
             foreach ($rooms as $room) {           ?>
              <tr>
                <td><?php echo $room['room_number']?> </td>
-               <td><a href="show/show.php?id=<?php echo $room['id'] ?>">Guarda Dettagli Stanza</a> </td>
+               <td><a href="show/show.php?id=<?php echo $room['id'] ?>">Guarda Dettagli Stanza <?php echo $room['room_number']?> </a> </td>
              </tr>
            <?php }
          } ?>
