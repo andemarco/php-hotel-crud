@@ -1,5 +1,5 @@
 <?php
-  include 'database.php';
+  include __DIR__ . '/../database.php';
 
   $idRoom = $_GET['id'];
 

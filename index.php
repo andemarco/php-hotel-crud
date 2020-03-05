@@ -1,16 +1,9 @@
 <?php
-  include 'database.php';
+  include 'server.php';
+  include 'partials/header.php';
  ?>
 
- <!DOCTYPE html>
- <html lang="en" dir="ltr">
-   <head>
-     <meta charset="utf-8">
-     <link rel="stylesheet" href="dist/app.css">
-     <title></title>
-   </head>
-   <body>
-     <h1 class="text-center">HOTEL MICAMALE</h1>
+
      <table class="table">
        <thead>
          <tr>
@@ -24,6 +17,7 @@
              <tr>
                <td><?php echo $room['room_number']?> </td>
                <td><a href="show/show.php?id=<?php echo $room['id'] ?>">Guarda Dettagli Stanza <?php echo $room['room_number']?> </a> </td>
+               <td><a href="show/show.php?id=<?php echo $room['id']?>" class="text-danger">Distruggi Stanza Numero <?php echo $room['room_number']?> </a> </td>
              </tr>
            <?php }
          } ?>
