@@ -7,7 +7,7 @@
      <p>Hai cancellato la stanza id : <?php echo $_GET['roomNumber'] ?></p>
      <a href="<?php echo $homePage ?>"class="btn btn-info">OK</a>
    </div>
-<?php } ?>
+<?php die(); } ?>
 
 
      <table class="table">
