@@ -10,4 +10,5 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <a class="navbar-brand" href="#">Hotel Micamale</a>
+      <a class="mx-auto" href="create/create.php">Aggiungi una nuova stanza</a>
    </nav>
