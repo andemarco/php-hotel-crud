@@ -1,6 +1,8 @@
 <?php
   include_once 'server.php';
   include __DIR__ . '/../partials/header.php';
+
+
 ?>
     <h1>STANZA NUMERO: <?php echo $room['room_number']; ?></h1>
     <form action="server.php" method="POST">
