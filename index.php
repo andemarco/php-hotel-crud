@@ -23,6 +23,7 @@
              <tr>
                <td><?php echo $room['room_number']?> </td>
                <td><a href="show/show.php?id=<?php echo $room['id'] ?>">Guarda Dettagli Stanza <?php echo $room['room_number']?> </a> </td>
+               <td><a href="update/update.php?id=<?php echo $room['id'] ?>">Modifica Stanza <?php echo $room['room_number']?> </a> </td>
               <td>
                <form action="delete/server.php" method="POST">
                  <input type="hidden" name="id" value="<?php echo $room['id'] ?>">
