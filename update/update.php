@@ -1,11 +1,11 @@
 <?php
-  include_once 'server.php';
   include __DIR__ . '/../partials/header.php';
+  include 'server-get.php';
 
 
 ?>
     <h1>STANZA NUMERO: <?php echo $room['room_number']; ?></h1>
-    <form action="server.php" method="POST">
+    <form action="server-post.php" method="POST">
       <div class="form-group">
         <label for="room_number">Numero Stanza</label>
         <input class="form-control" type="text" name="room_number" value="<?php echo  $room['room_number'] ?>">

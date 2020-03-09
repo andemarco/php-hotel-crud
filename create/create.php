@@ -1,5 +1,4 @@
 <?php
-  include_once 'server.php';
   include __DIR__ . '/../partials/header.php';
 ?>
     <h1>Aggiungiamo una nuova stanza</h1>
